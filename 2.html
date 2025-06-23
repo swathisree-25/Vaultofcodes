@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships</title>
+    <style>
+        /* Basic reset and page setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+            padding-bottom: 3rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        /* Header styling */
+        h1 {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            color: #2c3e50;
+            font-size: 2.5rem;
+            position: relative;
+            padding-bottom: 0.8rem;
+        }
+        
+        h1::after {
+            content: "";
+            display: block;
+            width: 120px;
+            height: 4px;
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+            margin: 0.5rem auto;
+            border-radius: 2px;
+        }
+        
+        /* Card container styling with two rows of two cards each */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        /* Card styling with improved aesthetics */
+        .card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            border-top: 6px solid #3498db;
+        }
+        
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12);
+        }
+        
+        /* Card header styling */
+        .card h2 {
+            padding: 1.5rem 1.5rem 1rem;
+            color: #2c3e50;
+            font-size: 1.6rem;
+            font-weight: 600;
+            background: linear-gradient(to right, rgba(52, 152, 219, 0.05), transparent);
+        }
+        
+        /* List styling */
+        .card ul {
+            padding: 0 1.5rem 1.5rem;
+            list-style-type: none;
+        }
+        
+        .card li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+            font-size: 1rem;
+        }
+        
+        .card li::before {
+            content: "•";
+            color: #3498db;
+            font-size: 1.5rem;
+            line-height: 1;
+            margin-right: 0.5rem;
+            font-weight: bold;
+        }
+        
+        /* Button styling */
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.8rem 1.6rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 1.2rem 1.5rem 1.5rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+            font-size: 1rem;
+        }
+        
+        .btn:hover {
+            background: #2980b9;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(52, 152, 219, 0.3);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Internships</h1>
+        
+        <!-- Two rows of two internships each -->
+        <div class="card-container">
+            <!-- First row -->
+            <div class="card">
+                <h2>Web Development Internship Program</h2>
+                <ul>
+                    <li>Duration: 1 month / 2 months</li>
+                    <li>Location: Virtual</li>
+                    <li>Stipend: —</li>
+                    <li>Start date: 05/11/2023</li>
+                </ul>
+                <a href="#" class="btn">View Details</a>
+            </div>
+            <div class="card">
+                <h2>App Development Internship Program</h2>
+                <ul>
+                    <li>Duration: 1 month / 2 months</li>
+                    <li>Location: Virtual</li>
+                    <li>Stipend: —</li>
+                    <li>Start date: 05/11/2023</li>
+                </ul>
+                <a href="#" class="btn">View Details</a>
+            </div>
+            
+            <!-- Second row -->
+            <div class="card">
+                <h2>Python Programming Internship Program</h2>
+                <ul>
+                    <li>Duration: 1 month / 2 months</li>
+                    <li>Location: Virtual</li>
+                    <li>Stipend: —</li>
+                    <li>Start date: 05/11/2023</li>
+                </ul>
+                <a href="#" class="btn">View Details</a>
+            </div>
+            <div class="card">
+                <h2>Java Programming Internship Program</h2>
+                <ul>
+                    <li>Duration: 1 month / 2 months</li>
+                    <li>Location: Virtual</li>
+                    <li>Stipend: —</li>
+                    <li>Start date: 05/11/2023</li>
+                </ul>
+                <a href="#" class="btn">View Details</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
